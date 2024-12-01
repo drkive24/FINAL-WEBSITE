@@ -9,7 +9,7 @@ h2 {
     font-size: 90px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-shadow: 2px 2px rgb(160, 160, 255);
-    animation-name: inherit;
+    animation: pulse 2s infinite alternate;
 }
 
 p {
@@ -45,5 +45,14 @@ a p {
     margin-left: 600px;
     margin-right: 600px;
     background-color: rgb(2, 0, 10);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
 }
 
