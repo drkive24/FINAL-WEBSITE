@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+    color: bisque;
+    margin: 50px;
+    font-size: 50px;
+}
+
+.parentone {
+    width: 100%;
+}
+
+.parentone div {
+    text-align: center;
+    width: 30%;
+    float: left;
+    margin: 20px;
+}
+
+.zodiac {
+    border: 2px solid rgb(7, 1, 58);
+    border-radius: 70px;
+    background-color: aquamarine;
+}
+
+.zodiac:hover {
+    background-image: url(https://i.pinimg.com/originals/ac/c3/5a/acc35a5269c7da107eb428ef8cb6a99a.gif);
+}
+
+div a {
+    text-decoration: none;
+
+}
+
+p {
+    color: black;
+    font-size: larger;
+    font-family: cursive;
+}

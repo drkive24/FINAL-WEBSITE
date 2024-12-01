@@ -1,0 +1,49 @@
+h1 {
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
+
+h2 {
+    color: rgb(255, 250, 184);
+    text-align: center;
+    font-size: 90px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px rgb(160, 160, 255);
+    animation-name: inherit;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+.title {
+ text-align: center;
+ margin-top: 150px;
+}
+
+.flexcon {
+    display: flex;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.171);
+}
+
+a {
+    text-decoration: none;
+}
+
+a :hover {
+    color: rgb(190, 253, 255);
+    background-image: url(https://i.pinimg.com/originals/8e/ff/81/8eff81d46686e3c82c64565eb09393b9.gif);
+}
+
+a p {
+    padding: 5px;
+    font-size: 20px;
+    border: 2px solid rgb(182, 184, 255);
+    border-radius: 80px;
+    margin-left: 600px;
+    margin-right: 600px;
+    background-color: rgb(2, 0, 10);
+}
+
