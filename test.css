@@ -1,58 +1,122 @@
-h1 {
-    color: rgb(255, 255, 255);
-    margin-left: 10px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h2 {
-    color: rgb(255, 250, 184);
-    text-align: center;
-    font-size: 90px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow: 2px 2px rgb(160, 160, 255);
-    animation: pulse 2s infinite alternate;
-}
-
-p {
-    color: white;
-    text-align: center;
-}
-
-.title {
- text-align: center;
- margin-top: 150px;
-}
-
-.flexcon {
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(https://images.alphacoders.com/135/1354216.jpeg);
+    background-size: cover;
+    color: #333;
+    height: 100vh;
+    overflow-x: hidden;
     display: flex;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.171);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-a {
+header {
+    text-align: center;
+    padding: 40px;
+    margin-top: 150px;
+    font-size: 2.5rem;
+    color: #f3f0f0; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #ffeef8; 
+}
+
+.zodiac-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.zodiac-navigation a {
     text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    background-color: #659bdd; 
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
 }
 
-a :hover {
-    color: rgb(190, 253, 255);
-    background-image: url(https://i.pinimg.com/originals/8e/ff/81/8eff81d46686e3c82c64565eb09393b9.gif);
+.zodiac-navigation a:hover {
+    background-image: url(https://media.tenor.com/iU5AZUFdlYEAAAAM/pink-blue-galaxy-sky.gif); 
+    color: #faf9f9; 
+    transform: translateY(-5px);
 }
 
-a p {
-    padding: 5px;
-    font-size: 20px;
-    border: 2px solid rgb(182, 184, 255);
-    border-radius: 80px;
-    margin-left: 600px;
-    margin-right: 600px;
-    background-color: rgb(2, 0, 10);
+.zodiac-sign {
+    background: rgb(235,69,192);
+background: linear-gradient(90deg, rgb(159, 245, 231) 0%, rgb(127, 193, 247) 50%, rgb(149, 142, 250) 100%); 
+    width: 80%;
+    height: 200px;
+    margin: 30px 0;
+    margin-bottom: 50px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+
 }
 
-@keyframes pulse {
+.zodiac-sign h2 {
+    font-size: 2.2rem;
+    color: #6f7dff; 
+    margin-bottom: 20px;
+}
+
+.zodiac-sign p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #4f4f4f; 
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    font-size: 1rem;
+    background-color: #5fa3f5; 
+    color: #fff;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+}
+
+@keyframes fadeIn {
     0% {
-        transform: scale(1);
+        opacity: 0;
     }
     100% {
-        transform: scale(1.05);
+        opacity: 1;
     }
 }
 
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .zodiac-navigation a {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .zodiac-sign {
+        width: 90%;
+    }
+}
